@@ -1,0 +1,11 @@
+- start mongod
+- padrino rake seed
+- create user
+- login with that user
+- edit the profile
+- click everywhere => with Rack::Session::Pool the session dropped, you are in the login page again
+
+- Changes:
+    - add fake image to the edit profile page
+    - disable sessions in apps.rb
+    - use Rack::Session::Pool in both app.rb

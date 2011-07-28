@@ -27,6 +27,7 @@
 #
 Padrino.configure_apps do
   disable :sessions
+  disable :flash
   set :session_secret, 'b30960eb53ffb8f36310109722ac74a9a0351eecfafe69c6f2e7eb587a9d69d1'
   set :session_key, 'test.session'
 end

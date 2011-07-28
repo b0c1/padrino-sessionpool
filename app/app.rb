@@ -5,6 +5,7 @@ class Racktest < Padrino::Application
 
   #disable :sessions
   use Rack::Session::Pool, :key => settings.session_key, :secret => settings.session_secret
+  use Rack::Flash
 
 
 end

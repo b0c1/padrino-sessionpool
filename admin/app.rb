@@ -7,8 +7,8 @@ class Admin < Padrino::Application
 
   set :login_page, "/admin/sessions/new"
 
-  #disable :sessions
   use Rack::Session::Pool, :key => settings.session_key, :secret => settings.session_secret
+  use Rack::Flash
   disable :store_location
 
   access_control.roles_for :any do |role|
